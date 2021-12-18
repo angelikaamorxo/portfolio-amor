@@ -1,0 +1,253 @@
+/* Main colours of the website */
+:root {
+    --darkblue-color: #1B02A3;
+    --brightblue-color: #006AF9;
+    --lightblue-color: #00C0F9;
+    --darkpurple-color: #5319FB;
+    --neonpink-color: #DC00FE;
+    --lightpurple-color: #BC00FE;
+    --plainwhite-color: #FFFFFF; 
+}
+
+/* Page header */
+header {
+    padding: 50px;
+    max-height: 100px;
+    margin: 0%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--darkpurple-color);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Header menu links */
+header a {
+    text-decoration: none;
+    color: var(--plainwhite-color);
+    font-size: larger;
+    text-shadow: 0 0 4px darkblue, 0 0 4px darkblue, 0 0 4px darkblue, 0 0 4px darkblue, 0 0 4px darkblue, 0 0 4px darkblue, 0 0 4px darkblue;
+}
+
+/* Page title styling */
+header h1 {
+    font-family:'Times New Roman', Times, serif;
+    font-size: 60px;
+    color: var(--plainwhite-color);
+    align-content: center;
+    text-shadow: 0 0 4px darkblue, 0 0 4px darkblue, 0 0 4px darkblue, 0 0 4px darkblue, 0 0 4px darkblue, 0 0 4px darkblue, 0 0 4px darkblue, 0 0 4px darkblue, 0 0 4px darkblue, 0 0 4px darkblue, 0 0 4px darkblue, 0 0 4px darkblue, 0 0 4px darkblue, 0 0 4px darkblue, 0 0 4px darkblue, 0 0 4px darkblue, 0 0 4px darkblue, 0 0 4px darkblue, 0 0 4px darkblue, 0 0 4px darkblue;
+}
+
+/* Cover photo/banner */
+figure {
+    display: flex;
+    margin: 0%;
+    height: 393px;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--darkblue-color);
+    box-shadow: -2px -4px 40px 20px var(--darkblue-color);
+}
+
+/* Navigation bar */
+nav ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+/* Underline on navigation links */
+nav ul li {
+    margin-left: 30px;
+    padding-bottom: 10px;
+    border-bottom: 5px solid var(--plainwhite-color);
+}
+
+/* Changes the hover colour to pink */
+nav ul li:hover {
+    border-bottom: 5px solid var(--neonpink-color);
+}
+
+/* Changes whole website background colour */
+body {
+    box-sizing: border-box;
+    padding: 0;
+    margin:  0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--darkpurple-color);
+}
+
+
+/* Margin to the main section of the page */
+.main {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+/* Adds display flex to the main section of the website */
+.content {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: left;
+    width: 100%;
+}
+
+/* About Me, Work and Contact styling on the left side of website */
+.leftside {
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    width: 30%;
+    font-size: 125%;
+    height: 150px;
+    align-items: center; 
+    justify-content: center;
+    margin: 10px 0;
+    color: var(--plainwhite-color);
+    text-shadow: 0 0 4px darkblue, 0 0 4px darkblue, 0 0 4px darkblue, 0 0 4px darkblue, 0 0 4px darkblue, 0 0 4px darkblue, 0 0 4px darkblue;
+}
+
+
+/*Border line separating "leftside" and "content" */
+.border {
+    width: 70%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: center;
+    padding: 30px;
+    border-left: 5px solid var(--lightblue-color);
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--plainwhite-color);
+}
+
+/* Photos next to the About Me section */
+.border img {
+    width: 25%;
+    height: auto;
+    align-items: center;
+    border-radius: 20%;
+    box-shadow: 2px 2px 50px 40px var(--darkblue-color);
+}
+
+/* Styles the projects */
+.projects {
+    display: inline-block;
+    border-radius: 6px;
+    padding: 20px;
+    margin: 16px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--plainwhite-color); 
+    box-shadow: 2px 2px 50px 40px var(--darkblue-color);
+}
+
+/* Resizes the first project to be the biggest */
+.projects:first-child {
+    width: 95%;
+    height: 400px;
+}
+/* Adds styling for all work boxes that arent the first project */
+.projects:not(:first-child) {
+    flex: 1;
+}
+
+/* Styles the heading of the websites */
+.projects h3 {
+    margin: 0;
+}
+
+/* Styles the text of the projects */
+.projects p {
+    font-size: 80%;
+    margin: 0;
+}
+
+/* Adds the fade when the projects are hovered over */
+.projects:hover {
+   opacity: 0.5;
+}
+
+/* Adds a photo for each project */
+/* Project 1 */
+.num1 {
+    background-image: url('../assets/images/project1_Horiseon.jpg');
+    background-size: cover;
+}
+
+/* Project 2 */
+.num2 {
+    background-image: url('../assets/images/project2_dogpackapp.jpg');
+    background-size: cover;
+}
+
+/* Project 3 */ 
+.num3 {
+    background-image: url('../assets/images/project3_foodstagram.jpg');
+    background-size: cover;
+}
+
+/* Project 4 */
+.num4 {
+    background-image: url('../assets/images/project4_coolmathgames.jpg');
+    background-size: cover;
+}
+
+/* Project 5 */
+.num5 {
+    background-image: url('../assets/images/project5_turbo.jpg');
+    background-size: cover;
+}
+
+/* Sets how the footer is displayed */
+.footer {
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    color: var(--plainwhite-color);
+}
+
+/* Writing in the p tags */
+.footer p{
+    border-bottom: 3px solid var(--main-color);
+    color: var(--plainwhite-color);
+}
+
+/* Links in the footer decorated */
+footer a {
+    text-decoration: none;
+    color: var(--plainwhite-color);
+    margin-left: 30px;
+    padding-bottom: 10px;
+    border-bottom: 5px solid var(--plainwhite-color);
+}
+
+/* Hovering over the links will turn the bottom underline pink */
+footer a:hover {
+    border-bottom: 5px solid var(--neonpink-color);
+}
+
+
+@media screen and (max-width: 425px) {
+    body {
+        background-color: var(--neonpink-color);
+        padding: 0; 
+        margin: 0;
+    }
+    
+    header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        background-color: var(--neonpink-color);
+        font-family: Arial, Helvetica, sans-serif;
+    }
+}
