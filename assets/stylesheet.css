@@ -178,31 +178,31 @@ body {
 /* Adds a photo for each project */
 /* Project 1 */
 .num1 {
-    background-image: url('../assets/images/project1_Horiseon.jpg');
+    background-image: url('./images/updateportfolio/StarryNight.jpg');
     background-size: cover;
 }
 
 /* Project 2 */
 .num2 {
-    background-image: url('../assets/images/project2_dogpackapp.jpg');
+    background-image: url('./images/updateportfolio/pwdgen.PNG');
     background-size: cover;
 }
 
 /* Project 3 */ 
 .num3 {
-    background-image: url('../assets/images/project3_foodstagram.jpg');
+    background-image: url('./images/updateportfolio/wthrboard.PNG');
     background-size: cover;
 }
 
 /* Project 4 */
 .num4 {
-    background-image: url('../assets/images/project4_coolmathgames.jpg');
+    background-image: url('./images/project1_Horiseon.jpg');
     background-size: cover;
 }
 
 /* Project 5 */
 .num5 {
-    background-image: url('../assets/images/project5_turbo.jpg');
+    background-image: url('./images/updateportfolio/penpaper.jpg');
     background-size: cover;
 }
 
