@@ -21,3 +21,4 @@ The assignment was created to apply the newly developed html and css skills that
 Screenshots of the code written to create the website is located in assets > images > code screenshots. The photos of code are numbered accordingly from top to bottom. 
 
 ## Link to Portfolio: 
+https://angelikaamorxo.github.io/portfolio-amor/
